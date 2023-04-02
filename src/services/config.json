@@ -1,0 +1,6 @@
+{
+  "base_url": {
+    "prod": "http://admin-uat.chainproshop.com/api/",
+    "dev": "http://admin-uat.chainproshop.com/api/"
+  }
+}

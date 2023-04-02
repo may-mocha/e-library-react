@@ -4,13 +4,11 @@ import { combineReducers } from 'redux'
 import thunk from 'redux-thunk'
 import storage from 'redux-persist/lib/storage'
 
-// import auth from './auth'
-// import cart from './cart'
-// import other from './other'
-// import product from './product'
-// import theme from './theme'
+import uiSlice from './actions/uitxt'
+import productSlice from './actions/product'
 
 const reducers = combineReducers({
+  dictionary: uiSlice
   // auth: auth.authSlice,
   // cart: cart.cartSlice,
   // product: product.productSlice,

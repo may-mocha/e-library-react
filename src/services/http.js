@@ -1,5 +1,5 @@
 import axios from "axios"
-import config from "../config.json"
+import config from "./config.json"
 
 axios.defaults.baseURL = config.base_url[
   window.location.hostname === 'localhost' ?

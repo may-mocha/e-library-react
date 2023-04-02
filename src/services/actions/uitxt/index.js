@@ -1,12 +1,13 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 import { http } from '../../http'
+import { getEndpointUrl } from '../../routes'
 
 export const getDictionaryAction = createAsyncThunk(
     "dictionary",
     async (dispatch, getState) => {
         return http({
             method: 'get',
-            url: 'dictionary'
+            url: getEndpointUrl('getDictionary')
         }).then(res => res)
     }
 )
