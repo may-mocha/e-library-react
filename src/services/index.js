@@ -5,10 +5,11 @@ import thunk from 'redux-thunk'
 import storage from 'redux-persist/lib/storage'
 
 import uiSlice from './actions/uitxt'
-import productSlice from './actions/product'
+import productSlice from './actions/product/productDetail'
 
 const reducers = combineReducers({
-  dictionary: uiSlice
+  dictionary: uiSlice,
+  product: productSlice,
   // auth: auth.authSlice,
   // cart: cart.cartSlice,
   // product: product.productSlice,

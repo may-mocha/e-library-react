@@ -13,7 +13,6 @@ const App = () => {
     dispatch(getDictionaryAction())
     let obj = {
       id: 254,
-      cateid: 12,
       lang: 'en'
     }
     dispatch(getProductDetailAction(obj))

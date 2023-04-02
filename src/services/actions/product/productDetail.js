@@ -5,10 +5,10 @@ import { getEndpointUrl, routeFilter } from '../../routes'
 export const getProductDetailAction = createAsyncThunk(
     "productDetail",
     async (dispatch, getState) => {
-        let { id, cateid, ...field } = dispatch
+        let { id, ...field } = dispatch
         return http({
             method: 'get',
-            url: `${getEndpointUrl('getProductById', { id, cateid })}${routeFilter(field)}`,
+            url: `${getEndpointUrl('getProductById', { id })}${routeFilter(field)}`,
         }).then(res => res)
     }
 )

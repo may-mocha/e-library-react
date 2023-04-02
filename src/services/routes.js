@@ -3,7 +3,8 @@ import queryString from "query-string";
 const routeConfig = {
   login: 'auth/token',
   getDictionary: 'dictionary',
-  getProductById: '/product/:id/cate/:cateid',
+  getProductById: '/product/:id',
+  // getProductById: '/product/:id/cate/:cateid',
 };
 
 export const getEndpointUrl = (endpointKey, params = {}) => {
